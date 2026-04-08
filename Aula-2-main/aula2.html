@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora e Gerador</title>
+    <link rel="stylesheet" href="aula2.css">
+</head>
+<body>
+    <div class="container">
+            <h2>Número Aleatório</h2>
+            <p>Clique abaixo para gerar um número entre 1 e 100</p>
+            <button onclick="gerarNumeroaleatorio()" > gerar</button>
+            <h3 id="numeroGerado">-</h3>
+    </div>
+
+    <div class="container">
+        <section class="box">
+            <h2>Somar Números</h2>
+            <input type="number" id="somar1" placeholder="Digite o 1º número">
+            <input type="number" id="somar2" placeholder="Digite o 2º número">
+            <button onclick="operacaoMatematica( document.getElementById('somar1'),
+                                                 document.getElementById('somar2'),
+                                                 document.getElementById('resultadoSoma'),
+                                                 'adicao' )"> somar</button>
+            <p id="resultadoSoma">Resultado: -</p>
+        </section>
+    </div>
+    
+    <div class="container">
+        <section class="box">
+            <h2>Multiplicar Números</h2>
+            <input type="number" id="multiplicar1" placeholder="Digite o 1º número">
+            <input type="number" id="multiplicar2" placeholder="Digite o 2º número">
+            <button onclick="operacaoMatematica(document.getElementById('multiplicar1'),
+                                                 document.getElementById('multiplicar2'),
+                                                 document.getElementById('resultadoMultiplicacao'),
+                                                 'multiplicacao' )">multiplicar_numeros</button>
+            <p id="resultadoMultiplicacao">Resultado: -</p>
+        </section>
+    </div>
+    <div class="container">
+        <section class="box">
+            <h2>Dividir Números</h2>
+            <input type="number" id="dividir1" placeholder="Digite o 1º número">
+            <input type="number" id="dividir2" placeholder="Digite o 2º número">
+            <button onclick="operacaoMatematica(document.getElementById('dividir1'),
+                                                 document.getElementById('dividir2'),
+                                                 document.getElementById('resultadoDivisao'),
+                                                 'divisao' )">Dividir</button>
+            <p id="resultadoDivisao">Resultado: -</p>
+        </section>
+    </div>
+
+    <script src="aula2.js"></script>
+</body>
+</html>
